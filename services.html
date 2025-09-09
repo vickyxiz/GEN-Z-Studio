@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Gen Z Studio</title>
+  <link rel="icon" type="image/svg+xml" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="animated-bg text-gray-900 antialiased">
+
+  <!-- NAV -->
+  <nav class="nav-glass fixed top-4 left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-50 shadow-nav">
+    <div class="nav-inner container px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="brand flex items-center gap-3" id="brand">
+        <img src="logo.png" alt="Gen Z Studio Logo" class="brand-logo" />
+        <div>
+          <div class="brand-title">Gen Z</div>
+          <div class="brand-sub">Studio</div>
+        </div>
+      </a>
+      <ul class="nav-links hidden md:flex items-center gap-6" id="navLinks">
+        <li><a class="nav-link" href="works.html">Work</a></li>
+        <li><a class="nav-link active" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="clients.html">Clients</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="knowledge.html">Knowledge</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="relative z-10 min-h-[60vh] flex items-center justify-center text-center p-6">
+    <div class="container mx-auto">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white">Our Services</h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-200">Design, technology, and marketing solutions that accelerate your growth.</p>
+    </div>
+  </header>
+
+  <!-- DESIGN SERVICES -->
+  <section class="py-16 md:py-24 px-6 md:px-12 section-bg">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Design</h2>
+        <ul class="text-lg md:text-xl font-semibold space-y-4 text-gray-200 service-list">
+          <li class="service-item">UI Design - Beautiful, intuitive user interfaces.</li>
+          <li class="service-item">UX Design - Smooth, user-friendly experiences.</li>
+          <li class="service-item">Design Systems - Scalable, reusable components.</li>
+          <li class="service-item">Illustrations & Animation - Visual storytelling that engages.</li>
+        </ul>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=800" alt="Design Services" class="w-full max-w-md rounded-lg shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY SERVICES -->
+  <section class="py-16 md:py-24 px-6 md:px-12 bg-surface">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Technology</h2>
+        <ul class="text-lg md:text-xl font-semibold space-y-4 text-gray-200 service-list">
+          <li class="service-item">Web Development - Scalable websites & apps.</li>
+          <li class="service-item">Mobile Apps - iOS & Android solutions.</li>
+          <li class="service-item">Custom Software - Tailored to business needs.</li>
+          <li class="service-item">Front-End & Back-End - Robust, modern stacks.</li>
+        </ul>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Technology Services" class="w-full max-w-md rounded-lg shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETING SERVICES -->
+  <section class="py-16 md:py-24 px-6 md:px-12 section-bg">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Marketing</h2>
+        <ul class="text-lg md:text-xl font-semibold space-y-4 text-gray-200 service-list">
+          <li class="service-item">Branding - Unique identity that stands out.</li>
+          <li class="service-item">Strategy - Data-driven marketing plans.</li>
+          <li class="service-item">Digital Marketing - SEO, PPC, Social Media.</li>
+          <li class="service-item">Content & Campaigns - Storytelling that converts.</li>
+        </ul>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800" alt="Marketing Services" class="w-full max-w-md rounded-lg shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-16 md:py-24 px-6 md:px-12 bg-surface">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Let’s Work Together</h2>
+      <p class="text-lg md:text-xl text-gray-200 mb-6">Got a project in mind? Let’s collaborate and create something extraordinary.</p>
+      <a href="contact.html" class="btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 text-center text-gray-300">
+    © Gen Z Studio · All Rights Reserved
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

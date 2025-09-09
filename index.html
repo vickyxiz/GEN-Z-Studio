@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gen Z Studio - Enhanced Submission</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z' fill='%23FF5D7D'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="animated-bg text-gray-900 antialiased">
+
+  <div aria-hidden="true" class="bg-blobs">
+    <svg class="blob b1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#FF5D7D"/><stop offset="1" stop-color="#8E44AD"/></linearGradient></defs><path fill="url(#g1)" d="M421,347Q384,444,312,467Q240,490,174,447Q108,404,79,330Q50,256,83,184Q116,112,190,86Q264,60,333,87Q402,114,435,191Q468,268,421,347Z"/></svg>
+    <svg class="blob b2" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#2ED1B4"/><stop offset="1" stop-color="#4B77BE"/></linearGradient></defs><path fill="url(#g2)" d="M463,332Q434,414,362,464Q290,514,204,488Q118,462,84,385Q50,308,69,231Q88,154,162,118Q236,82,315,102Q394,122,447,189Q500,256,463,332Z"/></svg>
+  </div>
+
+  <nav class="nav-glass fixed top-4 left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-50 shadow-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner container px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="brand flex items-center gap-3" id="brand">
+        <img src="logo.png" alt="Gen Z Studio Logo" class="brand-logo" />
+        <div>
+          <div class="brand-title">Gen Z</div>
+          <div class="brand-sub">Studio</div>
+        </div>
+      </a>
+
+      <ul class="nav-links hidden md:flex items-center gap-6" id="navLinks">
+        <li><a class="nav-link" href="work.html">Work</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="clients.html">Clients</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="knowledge.html">Knowledge</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta flex items-center gap-4">
+        <button class="icon-btn" aria-label="Theme toggle" id="themeToggle" title="Toggle dark/light">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M12 3v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 19v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4.2 4.2l1.4 1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18.4 18.4l1.4 1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+
+        <a href="contact.html" class="btn-primary hidden md:inline">Contact</a>
+
+        <button id="mobileBtn" class="mobile-btn md:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="relative z-10 min-h-screen flex items-center justify-center text-left p-6">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left hero-left">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight hero-text">
+          <span class="shimmer">Design</span>
+          <span class="shimmer">Transform</span>
+          <span class="shimmer">Accelerate</span>
+        </h1>
+        <p class="mt-4 md:mt-6 text-lg md:text-xl text-gray-100 max-w-md hero-subtitle">
+            Redefining user experiences through <span class="tag">Behavioural Science</span> &amp; <span class="tag">AI</span>
+        </p>
+        <p class="mt-8 text-sm md:text-base text-gray-200 hero-tagline">Your trusted UI UX design agency.</p>
+
+        <div class="mt-6 flex flex-wrap justify-center lg:justify-start items-center space-x-4 md:space-x-6 hero-logos">
+            <img src="https://placehold.co/100x40/f0f0f0/666?text=P%26G" alt="P&G Logo" class="h-8 md:h-10 opacity-80 logo-pill">
+            <img src="https://placehold.co/120x40/f0f0f0/666?text=FAB" alt="FAB Logo" class="h-8 md:h-10 opacity-80 logo-pill">
+            <img src="https://placehold.co/100x40/f0f0f0/666?text=KPIT" alt="KPIT Logo" class="h-8 md:h-10 opacity-80 logo-pill">
+            <img src="https://placehold.co/120x40/f0f0f0/666?text=TATA" alt="TATA Logo" class="h-8 md:h-10 opacity-80 logo-pill">
+            <img src="https://placehold.co/100x40/f0f0f0/666?text=BMW" alt="BMW Logo" class="h-8 md:h-10 opacity-80 logo-pill">
+            <img src="https://placehold.co/120x40/f0f0f0/666?text=SONY" alt="Sony Logo" class="h-8 md:h-10 opacity-80 logo-pill">
+        </div>
+      </div>
+
+      <div class="flex justify-center lg:justify-start relative hero-graphic">
+        <svg class="w-full max-w-sm md:max-w-md lg:max-w-xl network" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="dotG" x1="0" x2="1"><stop offset="0" stop-color="#FF5D7D"/><stop offset="1" stop-color="#2ED1B4"/></linearGradient></defs>
+            <circle class="dot" cx="300" cy="150" r="10" fill="#FF5D7D" />
+            <circle class="dot" cx="150" cy="300" r="10" fill="#2ED1B4" />
+            <circle class="dot" cx="450" cy="300" r="10" fill="#8E44AD" />
+            <circle class="dot" cx="300" cy="450" r="10" fill="#4B77BE" />
+            <line class="line" x1="300" y1="150" x2="150" y2="300" stroke="#fff" stroke-width="2" stroke-opacity="0.12"/>
+            <line class="line" x1="150" y1="300" x2="450" y2="300" stroke="#fff" stroke-width="2" stroke-opacity="0.12"/>
+            <line class="line" x1="450" y1="300" x2="300" y2="450" stroke="#fff" stroke-width="2" stroke-opacity="0.12"/>
+            <line class="line" x1="300" y1="450" x2="300" y2="150" stroke="#fff" stroke-width="2" stroke-opacity="0.12"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <section id="design-services" class="py-16 md:py-24 px-6 md:px-12 section-bg">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Design</h2>
+        <ul class="service-list space-y-4">
+            <li class="service-item-design">
+              <h3 class="font-bold text-lg text-white mb-1">UI Design</h3>
+              <p class="text-gray-300">We create stunning, intuitive user interfaces that are a joy to use.</p>
+            </li>
+            <li class="service-item-design">
+              <h3 class="font-bold text-lg text-white mb-1">UX Design</h3>
+              <p class="text-gray-300">Our user-centric approach ensures your product is both functional and delightful.</p>
+            </li>
+            <li class="service-item-design">
+              <h3 class="font-bold text-lg text-white mb-1">UX Consultancy</h3>
+              <p class="text-gray-300">We provide expert analysis to optimize your existing product's user flow.</p>
+            </li>
+            <li class="service-item-design">
+              <h3 class="font-bold text-lg text-white mb-1">Design System</h3>
+              <p class="text-gray-300">We build scalable, reusable component libraries to ensure brand consistency.</p>
+            </li>
+            <li class="service-item-design">
+              <h3 class="font-bold text-lg text-white mb-1">Animation</h3>
+              <p class="text-gray-300">Dynamic and engaging animations that bring your digital experience to life.</p>
+            </li>
+            <li class="service-item-design">
+              <h3 class="font-bold text-lg text-white mb-1">Illustrations</h3>
+              <p class="text-gray-300">Custom illustrations that communicate your brand's personality and message.</p>
+            </li>
+        </ul>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img src="https://placehold.co/400x400/2a2a2a/ffffff?text=Design+Services" alt="Design Services" class="w-full max-w-md rounded-lg shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <section id="tech-services" class="py-16 md:py-24 px-6 md:px-12 bg-surface">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Technology</h2>
+        <ul class="service-list space-y-4">
+            <li class="service-item-tech">
+              <h3 class="font-bold text-lg text-white mb-1">Web Development</h3>
+              <p class="text-gray-300">We build robust, high-performance websites and web applications.</p>
+            </li>
+            <li class="service-item-tech">
+              <h3 class="font-bold text-lg text-white mb-1">Software</h3>
+              <p class="text-gray-300">Custom software solutions tailored to your business needs and objectives.</p>
+            </li>
+            <li class="service-item-tech">
+              <h3 class="font-bold text-lg text-white mb-1">Mobile Apps</h3>
+              <p class="text-gray-300">Creating seamless and engaging mobile experiences for iOS and Android.</p>
+            </li>
+            <li class="service-item-tech">
+              <h3 class="font-bold text-lg text-white mb-1">Web Apps</h3>
+              <p class="text-gray-300">Designing and developing powerful web applications with modern frameworks.</p>
+            </li>
+            <li class="service-item-tech">
+              <h3 class="font-bold text-lg text-white mb-1">Front-End</h3>
+              <p class="text-gray-300">Crafting the user-facing side of your application with precision and care.</p>
+            </li>
+            <li class="service-item-tech">
+              <h3 class="font-bold text-lg text-white mb-1">Back-End</h3>
+              <p class="text-gray-300">Building the secure and scalable server-side logic that powers your app.</p>
+            </li>
+        </ul>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img src="https://placehold.co/400x400/2a2a2a/ffffff?text=Technology+Services" alt="Technology Services" class="w-full max-w-md rounded-lg shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <section id="marketing-services" class="py-16 md:py-24 px-6 md:px-12 section-bg">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Marketing</h2>
+        <ul class="service-list space-y-4">
+            <li class="service-item-marketing">
+              <h3 class="font-bold text-lg text-white mb-1">Branding</h3>
+              <p class="text-gray-300">We craft unique brand identities that resonate with your target audience.</p>
+            </li>
+            <li class="service-item-marketing">
+              <h3 class="font-bold text-lg text-white mb-1">Brand Name</h3>
+              <p class="text-gray-300">Developing creative and memorable brand names that stand out.</p>
+            </li>
+            <li class="service-item-marketing">
+              <h3 class="font-bold text-lg text-white mb-1">Brand Guidelines</h3>
+              <p class="text-gray-300">Creating comprehensive rulebooks for brand consistency across all platforms.</p>
+            </li>
+            <li class="service-item-marketing">
+              <h3 class="font-bold text-lg text-white mb-1">Strategy</h3>
+              <p class="text-gray-300">Data-driven marketing strategies to maximize your reach and impact.</p>
+            </li>
+            <li class="service-item-marketing">
+              <h3 class="font-bold text-lg text-white mb-1">Digital Marketing</h3>
+              <p class="text-gray-300">Comprehensive digital campaigns from social media to PPC.</p>
+            </li>
+            <li class="service-item-marketing">
+              <h3 class="font-bold text-lg text-white mb-1">S.E.O.</h3>
+              <p class="text-gray-300">Optimizing your site to rank higher in search results and drive organic traffic.</p>
+            </li>
+        </ul>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img src="https://placehold.co/400x400/2a2a2a/ffffff?text=Marketing+Services" alt="Marketing Services" class="w-full max-w-md rounded-lg shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 md:py-24 px-6 md:px-12 bg-surface">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4">260+ Projects Delivered</h2>
+      <p class="text-lg md:text-xl text-gray-200 mb-12">and counting more..</p>
+
+      <div class="stats flex flex-wrap justify-center gap-8 mb-10">
+        <div class="stat card shadow-lg">
+          <div class="stat-num" data-target="260">0</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat card shadow-lg">
+          <div class="stat-num" data-target="120">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat card shadow-lg">
+          <div class="stat-num" data-target="12">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center relative">
+        <svg class="w-full max-w-4xl opacity-20" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M50 250c100 0 150-100 250-100s150 100 250 100 150-100 250-100" stroke="#fff" stroke-width="1" stroke-opacity="0.06" stroke-dasharray="5 5" />
+        </svg>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex space-x-8">
+            <div class="w-20 h-20 rounded-full bg-[#FF5D7D] shadow-lg"></div>
+            <div class="w-20 h-20 rounded-full bg-[#8E44AD] shadow-lg"></div>
+            <div class="w-20 h-20 rounded-full bg-[#2ED1B4] shadow-lg"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center text-lg md:text-xl font-bold mt-12 gap-4">
+          <span class="pill">Foodtech</span>
+          <span class="pill">Fintech</span>
+          <span class="pill">Healthtech</span>
+          <span class="pill">Ai Bots</span>
+          <span class="pill">Traveltech</span>
+          <span class="pill">ECom</span>
+          <span class="pill">Realtech</span>
+          <span class="pill">Edtech</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-16 md:py-24 px-6 md:px-12 section-bg">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-12">What Clients Say</h2>
+      <div class="bg-surface-2 rounded-xl p-8 md:p-12 shadow-md max-w-3xl mx-auto testimonial-card">
+        <div class="flex items-start space-x-6">
+          <img src="https://placehold.co/100x100/2a2a2a/ffffff?text=Kapil" alt="Kapil Pershad" class="w-20 h-20 md:w-24 md:h-24 rounded-full shadow-md">
+          <div class="flex-1">
+            <div class="flex items-center text-yellow-400 mb-2 stars">
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27 6.82 20l1-5.83L3.8 10.04l5.88-.85L12 4l2.32 5.19 5.88.85-4.02 4.13 1 5.83z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27 6.82 20l1-5.83L3.8 10.04l5.88-.85L12 4l2.32 5.19 5.88.85-4.02 4.13 1 5.83z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27 6.82 20l1-5.83L3.8 10.04l5.88-.85L12 4l2.32 5.19 5.88.85-4.02 4.13 1 5.83z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27 6.82 20l1-5.83L3.8 10.04l5.88-.85L12 4l2.32 5.19 5.88.85-4.02 4.13 1 5.83z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27 6.82 20l1-5.83L3.8 10.04l5.88-.85L12 4l2.32 5.19 5.88.85-4.02 4.13 1 5.83z"/></svg>
+            </div>
+            <p class="text-xl md:text-2xl font-semibold italic text-white">
+              "I think the most impressive thing is their value proposition..."
+            </p>
+            <p class="mt-4 text-gray-200 font-bold">Kapil Pershad</p>
+            <p class="text-sm text-gray-300">C.T.O. - Payzli</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="founder" class="py-16 md:py-24 px-6 md:px-12 bg-surface">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Meet The Founder</h2>
+        <div class="bg-white rounded-xl p-8 shadow-md founder-card">
+          <img src="https://placehold.co/150x150/2a2a2a/ffffff?text=Jugal" alt="Jugal Shah" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <h3 class="text-2xl font-bold text-gray-900">Jugal Shah</h3>
+          <p class="text-gray-600">Founder, Head of UX at Gen Z Studio</p>
+          <div class="flex justify-center mt-4 space-x-4 text-gray-500">
+            <span>in</span>
+            <span>yahoo!</span>
+            <span>Clutch</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img src="https://placehold.co/400x400/2a2a2a/ffffff?text=Founder" alt="Founder" class="w-full max-w-sm md:max-w-md lg:max-w-xl rounded-lg shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 md:py-24 px-6 md:px-12 section-bg">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4">Let’s Work Together</h2>
+      <p class="text-lg md:text-xl text-gray-200 mb-8">Got a project in mind? Let’s collaborate and create something extraordinary.</p>
+      <a href="contact.html" class="btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-gray-300">
+    © Gen Z Studio · Submission Deadline: 09 September, 2025
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
